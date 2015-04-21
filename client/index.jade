@@ -31,7 +31,7 @@ html(lang='en', ng-app='poseidon')
               button.btn.btn-danger(ng-click='withdraw()') Withdrawal
               
         .col-xs-3
-          .deposit(ng-repeat='deposit in depositHistory') {{deposit.thisDeposit | currency}} {{deposit.thisDate | date:'medium'}}
+          .deposit(ng-repeat='deposit in depositHistory') {{deposit.thisDeposit | currency}} {{deposit.thisDate | date:'mm dd'}}
 
     script(src='/vendor/moment/moment.js')
     script(src='/vendor/jquery/dist/jquery.min.js')
